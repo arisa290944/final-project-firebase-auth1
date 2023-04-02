@@ -25,7 +25,7 @@ class _EditItemScreenState extends State<EditItemScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Edit Item"),
+        title: const Text("แก้ไขข้อมูล"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -33,13 +33,12 @@ class _EditItemScreenState extends State<EditItemScreen> {
           children: [
             TextField(
               controller: widget._itemName,
-              decoration: const InputDecoration(label: Text("Item name")),
+              decoration: const InputDecoration(label: Text("ชื่อ")),
               readOnly: true,
             ),
             TextField(
               controller: widget._itemDesc,
-              decoration:
-                  const InputDecoration(label: Text("Item Description")),
+              decoration: const InputDecoration(label: Text("นามสกุล")),
             ),
             const SizedBox(
               height: 20,
@@ -47,9 +46,10 @@ class _EditItemScreenState extends State<EditItemScreen> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: ElevatedButton(
-                  onPressed: _deleteItem, child: const Text("Delete")),
+                  onPressed: _deleteItem, child: const Text("ลบข้อมูล")),
             ),
-            ElevatedButton(onPressed: _editItem, child: const Text("Edit"))
+            ElevatedButton(
+                onPressed: _editItem, child: const Text("แก้ไขข้อมูล"))
           ],
         ),
       ),

@@ -13,7 +13,7 @@ class CreateAccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Create new Account"),
+        title: const Text("สร้างบัญชี"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(28.0),

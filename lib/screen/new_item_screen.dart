@@ -18,7 +18,7 @@ class _NewItemScreenState extends State<NewItemScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("New Item"),
+        title: const Text("สร้างบัญชี"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -26,16 +26,16 @@ class _NewItemScreenState extends State<NewItemScreen> {
           children: [
             TextField(
               controller: _itemName,
-              decoration: InputDecoration(label: Text("Item name")),
+              decoration: InputDecoration(label: Text("ชื่อ")),
             ),
             TextField(
               controller: _itemDesc,
-              decoration: InputDecoration(label: Text("Item Description")),
+              decoration: InputDecoration(label: Text("นามสกุล")),
             ),
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(onPressed: _addItem, child: const Text("Save"))
+            ElevatedButton(onPressed: _addItem, child: const Text("บันทึก"))
           ],
         ),
       ),

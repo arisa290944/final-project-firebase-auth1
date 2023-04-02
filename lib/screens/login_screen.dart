@@ -13,7 +13,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login to app"),
+        title: const Text("เข้าสู่ระบบ"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(100.0),
@@ -41,9 +41,9 @@ class LoginScreen extends StatelessWidget {
                   bool res = await _service.login(
                       _emailController.text, _passwordController.text);
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const MyHomePage(title: "My App")));
+                      builder: (context) => const MyHomePage(title: "ข้อมูล")));
                 },
-                child: const Text("Login")),
+                child: const Text("ล็อกอิน")),
             const SizedBox(
               height: 20,
             ),

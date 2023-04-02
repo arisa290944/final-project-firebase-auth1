@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
       ),
       home: LoginScreen(),
     );
@@ -67,10 +67,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: [
             DrawerHeader(
-                decoration: const BoxDecoration(color: Colors.blue),
-                child: Text("Hello User $displayEmail")),
+                decoration: const BoxDecoration(color: Colors.yellow),
+                child: Text("ยินดีต้อนรับ $displayEmail")),
             ListTile(
-              title: const Text("Logout"),
+              title: const Text("ออกจากระบบ"),
               onTap: () {
                 _service.logout();
                 Navigator.of(context).pushAndRemoveUntil(
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: const Text("New Item"),
+              title: const Text("สร้างบัญชี"),
               onTap: () {
                 _service.logout();
                 Navigator.of(context).push(
